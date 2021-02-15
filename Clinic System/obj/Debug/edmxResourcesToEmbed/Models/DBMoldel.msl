@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClinicSysDbModelStoreContainer" CdmEntityContainer="ClinicSysDbEntities">
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Country">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Patient">
+        <MappingFragment StoreEntitySet="Patient">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="StudNum" ColumnName="StudNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="EmerName" ColumnName="EmerName" />
+          <ScalarProperty Name="EmerLastName" ColumnName="EmerLastName" />
+          <ScalarProperty Name="EmerAddress" ColumnName="EmerAddress" />
+          <ScalarProperty Name="EmerCell" ColumnName="EmerCell" />
+          <ScalarProperty Name="Insured" ColumnName="Insured" />
+          <ScalarProperty Name="InsurCompa" ColumnName="InsurCompa" />
+          <ScalarProperty Name="InsurAddress" ColumnName="InsurAddress" />
+          <ScalarProperty Name="InsurCell" ColumnName="InsurCell" />
+          <ScalarProperty Name="IsVaccinated" ColumnName="IsVaccinated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthOptions">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.HealthOption">
+        <MappingFragment StoreEntitySet="HealthOption">
+          <ScalarProperty Name="CheckUpOption" ColumnName="CheckUpOption" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Races">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Race">
+        <MappingFragment StoreEntitySet="Race">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specialities">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Speciality">
+        <MappingFragment StoreEntitySet="Speciality">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimePreferences">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.TimePreference">
+        <MappingFragment StoreEntitySet="TimePreference">
+          <ScalarProperty Name="TimePreference1" ColumnName="TimePreference" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Types">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Type">
+        <MappingFragment StoreEntitySet="Type">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssetCategories">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.AssetCategory">
+        <MappingFragment StoreEntitySet="AssetCategory">
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssetDescriptions">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.AssetDescription">
+        <MappingFragment StoreEntitySet="AssetDescription">
+          <ScalarProperty Name="AssetDescr" ColumnName="AssetDescr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssetUsageTypes">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.AssetUsageType">
+        <MappingFragment StoreEntitySet="AssetUsageType">
+          <ScalarProperty Name="UsageTypeDescription" ColumnName="UsageTypeDescription" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Campus">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Campu">
+        <MappingFragment StoreEntitySet="Campus">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeTypes">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.EmployeeType">
+        <MappingFragment StoreEntitySet="EmployeeType">
+          <ScalarProperty Name="TypeEmp" ColumnName="TypeEmp" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Institutions">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Institution">
+        <MappingFragment StoreEntitySet="Institution">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InstitutionTypes">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.InstitutionType">
+        <MappingFragment StoreEntitySet="InstitutionType">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="VatNum" ColumnName="VatNum" />
+          <ScalarProperty Name="RegNum" ColumnName="RegNum" />
+          <ScalarProperty Name="Speciality" ColumnName="Speciality" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTitles">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.UserTitle">
+        <MappingFragment StoreEntitySet="UserTitle">
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventories">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventory">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AssetColor" ColumnName="AssetColor" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="UsageTypeId" ColumnName="UsageTypeId" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="Guarantee" ColumnName="Guarantee" />
+          <ScalarProperty Name="Warranty" ColumnName="Warranty" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="AssetDescriptionId" ColumnName="AssetDescriptionId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="TimeId" ColumnName="TimeId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Symptoms" ColumnName="Symptoms" />
+          <ScalarProperty Name="Commobidity" ColumnName="Commobidity" />
+          <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
+          <ScalarProperty Name="PractitionerId" ColumnName="PractitionerId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClinicTypes">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.ClinicType">
+        <MappingFragment StoreEntitySet="ClinicType">
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthClinics">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.HealthClinic">
+        <MappingFragment StoreEntitySet="HealthClinic">
+          <ScalarProperty Name="ClinicTypeId" ColumnName="ClinicTypeId" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="ResAddress" ColumnName="ResAddress" />
+          <ScalarProperty Name="Physical_Address" ColumnName="Physical_Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatientAppointments">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.PatientAppointment">
+        <MappingFragment StoreEntitySet="PatientAppointment">
+          <ScalarProperty Name="PractId" ColumnName="PractId" />
+          <ScalarProperty Name="Comorbidity" ColumnName="Comorbidity" />
+          <ScalarProperty Name="ID_Number" ColumnName="ID_Number" />
+          <ScalarProperty Name="StudentNumber" ColumnName="StudentNumber" />
+          <ScalarProperty Name="Cellphone2" ColumnName="Cellphone2" />
+          <ScalarProperty Name="Cellphone" ColumnName="Cellphone" />
+          <ScalarProperty Name="Symptoms" ColumnName="Symptoms" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="OptionId" ColumnName="OptionId" />
+          <ScalarProperty Name="TimeId" ColumnName="TimeId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentTypes">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.CommentType">
+        <MappingFragment StoreEntitySet="CommentType">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommunicationMethods">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.CommunicationMethod">
+        <MappingFragment StoreEntitySet="CommunicationMethod">
+          <ScalarProperty Name="Method" ColumnName="Method" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Priorities">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Priority">
+        <MappingFragment StoreEntitySet="Priority">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AttendedBy" ColumnName="AttendedBy" />
+          <ScalarProperty Name="Complaint" ColumnName="Complaint" />
+          <ScalarProperty Name="CommentMethodID" ColumnName="CommentMethodID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="PriorityId" ColumnName="PriorityId" />
+          <ScalarProperty Name="CommentTypeId" ColumnName="CommentTypeId" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicalPractitioners">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.MedicalPractitioner">
+        <MappingFragment StoreEntitySet="MedicalPractitioner">
+          <ScalarProperty Name="EmpTypeId" ColumnName="EmpTypeId" />
+          <ScalarProperty Name="PractitionerTypeId" ColumnName="PractitionerTypeId" />
+          <ScalarProperty Name="SpecialityId" ColumnName="SpecialityId" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="RaceId" ColumnName="RaceId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Cell" ColumnName="Cell" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="ResetPasswordCode" ColumnName="ResetPasswordCode" />
+          <ScalarProperty Name="ActivationCode" ColumnName="ActivationCode" />
+          <ScalarProperty Name="IsEmailVerified" ColumnName="IsEmailVerified" />
+          <ScalarProperty Name="PractitionerNum" ColumnName="PractitionerNum" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ID_Number" ColumnName="ID_Number" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="TitleID" ColumnName="TitleID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoleMappings">
+      <EntityTypeMapping TypeName="ClinicSysDbModel.UserRoleMapping">
+        <MappingFragment StoreEntitySet="UserRoleMapping">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
